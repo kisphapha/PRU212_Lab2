@@ -7,6 +7,7 @@ public class PlayerControl : MonoBehaviour
     [SerializeField] private float turningSpeed = 90f;
     private ParticleSystem dustParticles;
     private Rigidbody2D rb;
+    public float torque = 4;
     // Start is called before the first frame update
     void Start()
     {
@@ -20,12 +21,12 @@ public class PlayerControl : MonoBehaviour
         if (Input.GetKey(KeyCode.LeftArrow))
         {
             // Rotate object to the left
-            rb.AddTorque(1);
+            rb.AddTorque(torque);
         }
         if (Input.GetKey(KeyCode.RightArrow))
         {
             // Rotate object to the right
-            rb.AddTorque(-1);
+            rb.AddTorque(-torque);
 
         }
     }
@@ -43,4 +44,5 @@ public class PlayerControl : MonoBehaviour
             dustParticles.Stop();
         }
     }
+
 }
