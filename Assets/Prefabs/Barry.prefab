@@ -4998,6 +4998,55 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &3292096077678836354
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8759642483216592801}
+  - component: {fileID: 6379544032856970246}
+  m_Layer: 0
+  m_Name: GroundChecker
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8759642483216592801
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3292096077678836354}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 6316325161285337706}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6379544032856970246
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3292096077678836354}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e5299a4c5e2d2e04da248b25f94d4872, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  layer:
+    serializedVersion: 2
+    m_Bits: 0
+  distance: 0.3
+  rotaterDistance: 5
 --- !u!1 &6294098214641579750
 GameObject:
   m_ObjectHideFlags: 0
@@ -5011,6 +5060,7 @@ GameObject:
   - component: {fileID: 6478890366725191731}
   - component: {fileID: 4762126173643060531}
   - component: {fileID: 4596888942736343689}
+  - component: {fileID: 9031687884023030183}
   - component: {fileID: 2781837742493996925}
   - component: {fileID: 1490275134561176194}
   m_Layer: 0
@@ -5037,6 +5087,7 @@ Transform:
   - {fileID: 4410618232912511898}
   - {fileID: 7242787726064096457}
   - {fileID: 4061669170857184112}
+  - {fileID: 8759642483216592801}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!50 &5370251085444607960
@@ -5149,6 +5200,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   turningSpeed: 180
+  torque: 4
+--- !u!114 &9031687884023030183
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6294098214641579750}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a8066ede45270e419a1717e3220406c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  backFlips: 0
+  TotalFlipCount: 0
+  gc: {fileID: 0}
 --- !u!82 &2781837742493996925
 AudioSource:
   m_ObjectHideFlags: 0
