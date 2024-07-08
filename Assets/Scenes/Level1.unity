@@ -13657,11 +13657,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4596888942736343689, guid: b7838d900812057469343bd964bdfe99, type: 3}
       propertyPath: slowMultiplier
-      value: 0.95
+      value: 0.99
       objectReference: {fileID: 0}
     - target: {fileID: 4596888942736343689, guid: b7838d900812057469343bd964bdfe99, type: 3}
       propertyPath: speedMultiplier
-      value: 1.05
+      value: 1.01
       objectReference: {fileID: 0}
     - target: {fileID: 6294098214641579750, guid: b7838d900812057469343bd964bdfe99, type: 3}
       propertyPath: m_Name
