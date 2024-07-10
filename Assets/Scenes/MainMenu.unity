@@ -396,7 +396,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 21, y: -71}
+  m_AnchoredPosition: {x: 4, y: -75}
   m_SizeDelta: {x: 613.8584, y: 328.8441}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &396416916
@@ -420,8 +420,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 8a2b9e2a607dd2143b58c44bc32410b4, type: 3}
-    m_FontSize: 27
+    m_Font: {fileID: 12800000, guid: e3265ab4bf004d28a9537516768c1c75, type: 3}
+    m_FontSize: 30
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
@@ -432,9 +432,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "WASD/arrow key: To move \nSpace: To shoot\nStar: +1 live & +1000 points\nAsteroid:\n
-    +Hit: -2 lives & -2000 points\n +Destroy: +300 points\t\nSpaceship:\n +Hit: -1
-    live & +100 points\n +Destroy: +100 points"
+  m_Text: "WASD/arrow key: To move \nSpace: To jump\nGame over when head hit the
+    ground \nHighscore when have more score and less time \nCoins: Give 200 points"
 --- !u!222 &396416917
 CanvasRenderer:
   m_ObjectHideFlags: 0

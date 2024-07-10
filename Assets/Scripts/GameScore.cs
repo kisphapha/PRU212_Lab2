@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class GameScore : MonoBehaviour
 {
     public Text scoreTextUI;
-   // public TextMeshProUGUI highScoreText;
+    public Text highScoreText;
     int score = 0;
     int hiScoreCount = 0;
     public int Score
@@ -21,7 +21,7 @@ public class GameScore : MonoBehaviour
             UpdateScoreTextUI(score);
         }
     }
-  /*  public int HiScore
+    public int HiScore
     {
         get
         {
@@ -32,7 +32,7 @@ public class GameScore : MonoBehaviour
             this.hiScoreCount = value;
             UpdateScoreTextUI(score);
         }
-    }*/
+    }
 
     // Start is called before the first frame update
     void Start()
@@ -48,10 +48,11 @@ public class GameScore : MonoBehaviour
     void UpdateScoreTextUI(int scores)
     {
 
-       // string hiScoreStr = string.Format("{0:000000}", hiScoreCount);
-       // highScoreText.text = hiScoreStr.ToString();
+        string hiScoreStr = string.Format("{0:000000}", hiScoreCount);
+        highScoreText.text = hiScoreStr.ToString();
 
         string scoreStr = string.Format("{0:000000}", scores);
         scoreTextUI.text = scoreStr.ToString();
+
     }
 }
