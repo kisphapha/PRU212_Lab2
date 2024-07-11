@@ -13,6 +13,7 @@ public class PlayerControl : MonoBehaviour
     public float speedMultiplier = 1.05f;
     public float slowMultiplier = 0.95f;
     private bool isGrounded = false;
+    public GameObject GameManagerGO;
     // Start is called before the first frame update
     void Start()
     {
@@ -74,6 +75,12 @@ public class PlayerControl : MonoBehaviour
         {
             scoreTextGO.GetComponent<GameScore>().Score += 20;
             Destroy(collision.gameObject);
+        }
+
+        if (collision.CompareTag("Finish"))
+        {
+            GameManagerGO.GetComponent<GameManager>().SetGameManagerState(GameManager.GameManagerState.Victory);
+            gameObject.SetActive(false);
         }
     }
 }

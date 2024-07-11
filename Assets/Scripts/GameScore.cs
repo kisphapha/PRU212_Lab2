@@ -55,4 +55,5 @@ public class GameScore : MonoBehaviour
         scoreTextUI.text = scoreStr.ToString();
 
     }
+
 }
